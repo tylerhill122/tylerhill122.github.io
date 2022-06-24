@@ -1,3 +1,7 @@
+body {
+    background-color: aliceblue;
+}
+
 .container {
     padding:20px;
 }
@@ -13,6 +17,28 @@
 #menu {
     background: -webkit-linear-gradient(135deg, #895B82, #87A89B);
     padding:15px;
+}
+
+#box {
+    /* border-radius: 0px 0px 5px 5px; */
+    padding:20px;
+}
+
+.main-header {
+    background: rgba(248, 201, 12, 0.467);
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.main {
+    background-color: rgba(137, 91, 130, 0.5);
+    padding: 10px;
+}
+
+.main-footer {
+    background: rgba(248, 201, 12, 0.467);
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .color-palette {
