@@ -6,6 +6,15 @@ body {
     padding:20px;
 }
 
+.no-marg {
+    margin:0px;
+}
+
+.shade {
+    box-shadow: 0 4px 8px 0 rgba(135, 168, 155, 0.299), 0 6px 20px 0 rgba(135, 168, 155, 0.19);
+    background: rgba(248, 201, 12, 0.467);
+}
+
 #header {
     background: -webkit-linear-gradient(135deg, #A82D6D, #895B82);
     margin-top:20px;
@@ -25,18 +34,16 @@ body {
 }
 
 .main-header {
-    background: rgba(248, 201, 12, 0.467);
     padding: 10px;
     border-radius: 5px 5px 0px 0px;
 }
 
 .main {
-    background-color: rgba(137, 91, 130, 0.5);
     padding: 10px;
+    margin:10px;
 }
 
 .main-footer {
-    background: rgba(248, 201, 12, 0.467);
     padding: 10px;
     border-radius: 0px 0px 5px 5px;
 }
