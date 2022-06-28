@@ -47,6 +47,7 @@ body {
 #menu {
     background: -webkit-linear-gradient(135deg, #895B82, #87A89B);
     padding:15px;
+    border-radius:0px 0px 20px 20px;
 }
 
 #box {
@@ -72,6 +73,24 @@ body {
     background: -webkit-linear-gradient(135deg, #A82D6D, #895B82);
     color: #A0A568;
     height: 35px;
+}
+
+#github {
+    height: 40px;
+    width: 40px;
+}
+
+#ghub {
+    float:right;
+    padding:5px;
+}
+
+#ghub a {
+    opacity:0.5;
+}
+
+#ghub a:hover {
+    opacity:1;
 }
 
 .color-palette {
