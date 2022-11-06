@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Tyler Hill - Web Design and Data Analytics</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 shade" id="header">
+      <h1>Tyler Hill</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 shade" id="menu">
+      <nav class="navbar navbar-default no-marg navbar-expand-lg">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav mr-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item active"><a class="nav-link" href="projects.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+          <div id="ghub">
+            Check out my GitHub
+            <a href="https://github.com/tylerhill122" target="_blank"><img src="static/images/github.png" id="github"></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div style="padding-top:10px;">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="projects.html">Projects</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Python API Weather Analysis</li>
+        </ol>
+      </nav>
+    </div>
+    <div style="text-align: center;">
+      <h1>Python API Weather Analysis</h1>
+      <p>
+        <button type="button" class="btn btn-primary"><a href="https://github.com/tylerhill122/python-api-challenge" target="_blank">Project GitHub</a></button> | 
+        <button type="button" class="btn btn-primary"><a href="https://tylerhill122.github.io/Web-Design-Challenge/" target="_blank">Project Dashboard</a></button>
+      </p>
+    </div>
+    <div class="col-md-4">
+      <div class="sidebar top"><h4>Skills:</h4></div>
+      <div class="sidebar">
+        <ul>
+          <li>Python</li>
+          <li>Pandas</li>
+          <li>Data Retreival (API)</li>
+          <li>Matplotlib.pyplot</li>
+          <li>HTML / CSS / Bootstrap</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-8" id="main-box">
+      <p>The purpose of this project is to display our ability to use APIs to gather and plot data using Python/Pandas. 
+        We were tasked with randomly generating >500 coordinates with their corresponding latitudes and longitudes, then to grab the nearest city to these coordinates, accounting for and removing any duplicates. 
+        From there we placed those city names into OpenWeatherMap's "Current Weather Data" API to grab the following pertinent information: latitude and longitude, temperature, humiditiy, cloudiness, and wind speed.
+      </p>
+      <p>
+        From this information a Pandas DataFrame was created and exported as an external .csv file. We were tasked with creating four plots for the initial data: 
+      </p> 
+      <ol>
+        <li>Temperature vs. Latitude</li>
+        <li>Humidity vs. Latitude</li>
+        <li>Cloudiness vs. Latitude</li>
+        <li>Wind speed vs Latitude</li>
+      </ol>
+      <p>
+        Regression lines and values were also calculated, plotting the regression line.
+      </p>
+     <img src="static/images/python-api.png" style="height:500px; width:600px; padding:10px;">
+     <p>I chose to create all plots using a single function 'plot()' to avoid excess repetition. This was a decision that caused many headaches but would utimately be a worthwhile learning experience. I would like to re-visit this exercise and attempt to further clean-up the plotting function.</p>
+     <p>To expand further, the cities were separated into Northern and Southern Hemispheres to allow for more accurate plotting. The previously-created plotting function was re-used and modified for these plots. Given more time I would like to create a function to plot all plots without excess repetition.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
