@@ -34,12 +34,37 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12" id="main-box">
-      <p>Projects:</p>
-      <li><a href="python-api.html">Python API Analysis</a></li>
-      <li><a href="dashboard.html">Bellybutton Biodiversity Dashboard</a></li>
-      <li><a href="leaflet.html">Leaflet USGS Map of Geological Activity</a></li>
-      <li><a href="movie-dashboard.html">Movie Ratings Dashboard</a></li>
+    <div style="padding-top:10px;">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="projects.html">Projects</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Bellybutton Biodiversity Dashboard</li>
+        </ol>
+      </nav>
+    </div>
+    <div style="text-align: center;">
+      <h1>Movie Ratings Dashboard</h1>
+      <p>
+        <button type="button" class="btn btn-primary"><a href="https://github.com/blancacarretero/movie-recommendation-engine" target="_blank">Project GitHub</a></button> | 
+        <button type="button" class="btn btn-primary"><a href="https://movie-ratings-dashboard.herokuapp.com/" target="_blank">Deployed App</a></button>
+      </p>
+    </div>
+    <div class="col-md-4">
+      <div class="sidebar top"><h4>Skills:</h4></div>
+      <div class="sidebar">
+        <ul>
+          <li>Python / Flask / Pandas</li>
+          <li>HTML / CSS / Bootstrap</li>
+          <li>Data Parsing (local JSON)</li>
+          <li>Javascript</li>
+          <li>Plotly.js</li>
+          <li>DOM Manipulation (D3.js)</li>
+          <li>Machine Learning (sklearn, Logistic Regression, train-test-split)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-8" id="main-box">
+      This dashboard was created as a way to explore the <a href="https://grouplens.org/datasets/movielens/" target="_blank">MovieLens</a> movie ratings dataset. This was a group project where we set out to glean insights about users' movie preferences. I was responsible for coding the backend of the Flask app and deploying the finalized app to Heroku.
     </div>
   </div>
 </div>
