@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Tyler Hill - Web Design and Data Analytics</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 shade" id="header">
+      <h1>Tyler Hill</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 shade" id="menu">
+      <nav class="navbar navbar-default no-marg navbar-expand-lg">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav mr-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item active"><a class="nav-link" href="projects.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+          <div id="ghub">
+            Check out my GitHub
+            <a href="https://github.com/tylerhill122" target="_blank"><img src="static/images/github.png" id="github"></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div style="padding-top:10px;">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="projects.html">Projects</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Mars Web-Scraping App</li>
+        </ol>
+      </nav>
+    </div>
+    <div style="text-align: center;">
+      <h1>Mars Web Scraping</h1>
+      <p>
+        <button type="button" class="btn btn-primary"><a href="https://github.com/tylerhill122/web-scraping-challenge" target="_blank">Project GitHub</a></button> | 
+        <button type="button" class="btn btn-primary"><a href="https://daily-mars-scraper.herokuapp.com/" target="_blank">Deployed App</a></button>
+      </p>
+    </div>
+    <div class="col-md-4">
+      <div class="sidebar top"><h4>Skills:</h4></div>
+      <div class="sidebar">
+        <ul>
+          <li>Python / Flask / Pandas</li>
+          <li>Requests</li>
+          <li>HTML / CSS / Bootstrap</li>
+          <li>Data Parsing (local JSON)</li>
+          <li>Javascript</li>
+          <li>Web Scraping using Splinter, BeautifulSoup</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-8" id="main-box">
+      <p>This Python-Flask app was created to demonstrate web-scraping ability by creating a web-scraping Python script to scrape information from mutliple Mars-related websites.
+      The python script employs BeautifulSoup and Splinter to visit the websites and automatically collect and display relevant information, as well as collecting images to display within the app.
+      The information is then placed into a MongoDB database which is accessed in order to display the results.
+      The app can be modified to run daily, checking for latest news and placing the results into a database to track the results over time.
+      The scraping functionality has been removed from the app due to lack of resources necessary for full functionality.
+      </p>
+      <p>The follwing websites are used in the collecting of this information:
+        <ul>
+          <li><a href="https://redplanetscience.com">redplanetscience.com</a></li>
+          <li><a href="https://spaceimages-mars.com">spaceimages-mars.com</a></li>
+          <li><a href="https://galaxyfacts-mars.com">galaxyfacts-mars.com</a></li>
+          <li><a href="https://marshemispheres.com">marshemispheres.com</a></li>
+        </ul>
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
