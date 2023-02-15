@@ -50,6 +50,20 @@ body {
     padding:10px;
 }
 
+#footer {
+    margin-top:30px;
+    background:#e39480;
+    padding:15px;
+    border-radius:20px 20px 20px 20px;
+}
+
+.foot-box h4{
+    background-color:#FFF;
+    padding:10px;
+    border-radius:10px 10px 10px 10px;
+    text-align: center;
+}
+
 #github {
     height: 40px;
     width: 40px;
@@ -90,15 +104,7 @@ body {
     text-align: center;
 }
 
-/* .color-palette {
-    color: #87A89B;
-    color: #895B82;
-    color: #A82D6D;
-    color: #A0A568;
-    color: #F8CA0C;
-} */
-
-.color-palette2 {
+/* .color-palette2 {
     color: #2c5b8f;
     color: #f1c5aa;
     color: #406e63;
@@ -106,5 +112,4 @@ body {
     color: #e7c794;
     color: #101b2d;
     color: #b4d4d1;
-    
-}
+} */
